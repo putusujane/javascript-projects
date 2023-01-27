@@ -38,3 +38,30 @@
 // const data = fs.readFileSync("todo.txt", "utf-8");
 // console.log(data);
 
+// Readable Stream
+// const fs = require("fs");
+
+// const readableStream = fs.createReadStream("todo.txt", {
+//     highWaterMark: 10
+// });
+
+// readableStream.on("readable", () => {
+//     try {
+//         process.stdout.write(`[${readableStream.read()}]`);
+//     } catch (error) {
+//         // Catching error when the chunk cannot be read.
+//     }
+// });
+
+// readableStream.on("end", () => {
+//     console.log("\n\nDone");
+// });
+
+// Writeable Stream
+// const fs = require("fs");
+// const writeableStream = fs.createWriteStream("output.txt");
+
+// writeableStream.write("Paragraf pertama\n");
+// writeableStream.write("Paragraf kedua\n");
+// writeableStream.write("Paragraf ketiga\n");
+// writeableStream.end("Selesai");
