@@ -1,5 +1,13 @@
-const message = name => {
-	console.log(`Hello ${name}!`);
-}
+// const data = (name, age) => {
+// 	console.log(`Name: ${name}, age: ${age}`);
+// }
 
-message("Putu");
+// data("Putu", 27);
+
+// Menentukan nilai host berdasarkan kondisi NODE_ENV
+// const server = new Server({
+// 	host: ProcessingInstruction.env.NODE_ENV !== 'production' ? 'localhost' : 'dicoding.com',
+// });
+
+// const cpuInformation = process.memoryUsage();
+// console.log(cpuInformation);
