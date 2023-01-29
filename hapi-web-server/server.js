@@ -56,8 +56,87 @@
 
 // init(); // Memanggil fungsi init .
 
-// LATIHAN ----------------------------------
-const { server } = require("@hapi/hapi");
+
+// Path Parameter
+// ================================================
+
+// const Hapi = require("@hapi/hapi");
+// const routes = require("./routes");
+
+
+// const init = async () => {
+//     const server = Hapi.server({
+//         port: 5_000,
+//         host: "localhost",
+//     });
+
+//     server.route(routes);
+
+//     await server.start();
+//     console.log(`Server dibuat pada ${server.info.uri}`);
+// };
+
+// process.on("unhandledRejection", error => {
+//     console.log(error);
+//     process.exit(1);
+// });
+
+// init();
+
+
+// Query Parameter
+// =====================================================
+// const Hapi = require("@hapi/hapi");
+// const routes = require("./routes");
+
+// const init = async () => {
+//     const server = Hapi.server({
+//         port: 5_000,
+//         host: "localhost",
+//     });
+
+//     server.route(routes);
+
+//     await server.start();
+//     console.log(`Server berhasil pada ${server.info.uri}`);
+// };
+
+// process.on("unhandledRejection", error => {
+//     console.log(error);
+//     process.exit(1);
+// });
+
+// init ();
+
+
+// Body/Payload Request
+// =====================================================
+
+// const Hapi = require("@hapi/hapi");
+// const routes = require("./routes");
+
+// const init = async () => {
+//     const server = Hapi.server({
+//         port: 5_000,
+//         host: "localhost",
+//     });
+
+//     server.route(routes);
+
+//     await server.start();
+//     console.log(`Server berjalan pada ${server.info.uri}`);
+// };
+
+// process.on("unhandledRejection", error => {
+//     console.log(error);
+//     process.exit(1);
+// });
+
+// init();
+
+
+// Body/Payload Request
+// =====================================================
 const Hapi = require("@hapi/hapi");
 const routes = require("./routes");
 
@@ -70,12 +149,12 @@ const init = async () => {
     server.route(routes);
 
     await server.start();
-    console.log(`Server jalan. >> ${server.info.uri}`);
-};
+    console.log(`Server ok : ${server.info.uri}`);
+}
 
 process.on("unhandledRejection", error => {
     console.log(error);
     process.exit(1);
-});
+})
 
 init();
